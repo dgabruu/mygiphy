@@ -41,6 +41,26 @@
   .container{
     max-height: 400px;
     overflow-y: scroll;
+    -ms-overflow-style: none;
+    
   
   }
+
+  .container::-webkit-scrollbar{
+      display: none;
+  }
   
+  .img1{
+
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+
+  .mycir{
+  position: absolute;
+  top:80px;
+  left: 460px;
+  cursor: pointer;
+  }

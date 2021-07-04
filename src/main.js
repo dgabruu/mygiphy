@@ -9,7 +9,8 @@ class main extends React.Component{
         this.state={
             show:true,
             val:'',
-            myimage:''
+            myimage:'',
+            cut:false
         }
         this.sets=this.sets.bind(this)
         this.setgif=this.setgif.bind(this)
@@ -17,6 +18,7 @@ class main extends React.Component{
 
     setgif(id){
         this.setState({myimage:id})
+        this.setState({cut:!this.state.cut})
         console.log(this.state.myimage)
 
     }
@@ -49,8 +51,13 @@ class main extends React.Component{
         <label for="stuffs" className="far fa-smile-beam input-icon1"></label>
 
       </form>
-      <img src={this.state.myimage}
-       className='m-3 w-80 h-60'/>
+      {this.state.cut?
+   ( <div className='img1'> 
+   <a onClick={()=>this.setState({cut:!this.state.cut})}> <i class="far fa-times-circle mycir" ></i></a>
+        <img src={this.state.myimage}
+       className='m-3 '/> 
+       </div>):<div> </div>
+    }
   </div>
   <div className="card-footer bg-transparent border-secondary">
    <center><button className='btn btn-secondary gif1' onClick={()=>this.setState({show:!this.state.show})}>Search GIF</button><br></br></center> 
