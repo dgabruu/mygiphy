@@ -1,0 +1,46 @@
+.card{
+    width: 600px;
+}
+
+.in1{
+    border: transparent;
+    margin-left: 15px;
+   
+}
+
+.form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    
+  }
+
+  .input-icon{
+    position: absolute;
+    margin-left: 5px;
+    top: calc(8% - 0.5em);
+    color: rgb(71, 70, 70);
+  }
+
+  .input-icon1{
+    position: absolute;
+    margin-left: 30rem;
+    top: calc(8% - 0.5em);
+    color: rgb(71, 70, 70);
+  }
+
+  .gif1{
+      border-radius: 90px;
+      width: 100%;
+  }
+
+  .btn:focus {
+    box-shadow: none !important;
+  }
+
+  .container{
+    max-height: 400px;
+    overflow-y: scroll;
+  
+  }
+  
